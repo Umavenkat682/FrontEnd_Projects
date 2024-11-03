@@ -1,0 +1,142 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  /* Navbar */
+  nav {
+    width: 100%;
+    padding: 1rem;
+    background-color: #24292e;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav a {
+    color: #61dafb;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #21a1f1;
+  }
+  
+  /* Sections */
+  section {
+    padding: 80px 20px;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 8px;
+  }
+  
+  /* Home Section */
+  #home {
+    background-color: #0d1117;
+    color: #61dafb;
+  }
+  
+  #home h1 {
+    font-size: 2.5rem;
+  }
+  
+  #home p {
+    font-size: 1.2rem;
+    color: #c9d1d9;
+  }
+  
+  /* About Section */
+  #about {
+    background-color: #161b22;
+    color: #c9d1d9;
+  }
+  
+  .profile-pic {
+    border-radius: 50%;
+    margin-top: 1rem;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #61dafb;
+  }
+  
+  /* Projects Section */
+  #projects {
+    background-color: #0d1117;
+    color: #c9d1d9;
+  }
+  
+  .project {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .project:hover {
+    transform: scale(1.05);
+    border-color: #61dafb;
+  }
+  
+  /* Contact Section */
+  #contact {
+    background-color: #161b22;
+    color: #c9d1d9;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  input, textarea, button {
+    margin-top: 10px;
+    padding: 12px;
+    border: 1px solid #30363d;
+    border-radius: 5px;
+    background-color: #0d1117;
+    color: #c9d1d9;
+  }
+  
+  button {
+    background-color: #61dafb;
+    color: #0d1117;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #21a1f1;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  h1, h2 {
+    animation: fadeIn 1s ease;
+  }
+  
